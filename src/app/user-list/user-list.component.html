@@ -1,0 +1,20 @@
+<div class="container">
+  
+  <div class="row ">
+    <!-- <div class="search-hero">
+      <input class="form-control" type="text" name="search" autocomplete="off"   placeholder="Search user By Id">
+    </div> -->
+    <div class="col-md-12" >
+      <div class="col-xs-2">Id</div>
+      <div class="col-xs-2"> Name</div>
+      <div class="col-xs-3">User Name</div>
+      <div class="col-xs-3">Email</div>
+      <div class="col-xs-2">Phone</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <app-particular-user [particularUser]="u" [id]="i" *ngFor="let u of users; let i=index"></app-particular-user>
+    </div>
+  </div>
+</div>
